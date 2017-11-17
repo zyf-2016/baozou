@@ -2,7 +2,7 @@
 	<div class="wrapper">
     <scroll ref="scroll" class="container" :data="datalist">
       <ul>
-        <li class="item" v-for="item in datalist">
+        <li class="item" v-for="item in datalist" :key="item.document_id">
           <div class="icom"> 
             <img v-lazy="item.thumbnail" alt="">
           </div>
@@ -43,39 +43,43 @@ export default {
 </script>
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
+
   .wrapper
-    width: 100%
+    width: 98%
     position: fixed
-    top: 11.8rem
+    top: 218px
     bottom: 0
+    margin-left: 1%
     .container
       height: 100%
+      padding-top: 8px
       overflow: hidden
       .item
         display: flex
         border-size: border-box
         align-items: center
-        padding: 1rem 1.4rem
-        margin-bottom: 1rem 
-        box-shadow: 0 .1rem 1rem #c7c7c7
+        padding: 33px
+        margin-bottom: 20px 
+        background-color: #fff
+        box-shadow: 0 4px 8px #c4c4c4
         &:last-child
           margin-bottom: 0
-          box-shadow: 0 0 .1rem  #c7c7c7
+          box-shadow: 0 0 1px  #c7c7c7
         img 
-          width: 5.666rem
-          height:5.666rem
-          padding-right: 1rem
+          width: 120px
+          height:120px
+          padding-right: 33px
       .text
         display: flex
         flex-direction: column
         justify-content: center
         flex: 1
-        line-height: 20px
         overflow: hidden
         .itemtitle
-          padding-bottom: 1rem
-          font-size: 1.6rem
-          color: gray 
+          line-height: 40px /*px*/
+          margin-bottom: 28px
+          font-size: 36px /*px*/
+          color: #1a1a1a 
           text-overflow: -o-ellipsis-lastline;
           overflow: hidden;
           text-overflow: ellipsis;
@@ -83,7 +87,8 @@ export default {
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical; 
         .itemname
-          color: gray
+          color: #7a7a7a
+          font-size: 28px
       .loading-container
         position: absolute
         width: 100%

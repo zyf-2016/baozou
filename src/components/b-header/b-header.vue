@@ -16,28 +16,30 @@
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
 	.header
+		position: relative
+		z-index: 99
 		width: 100%
-		height: 3.4rem
-		padding-top: 4.2rem
+		height: 80px
+		padding-top: 50px
 		background: #fb3d4f
 		font-size: 0
 		.icon-side
 			display: inline-block
-			padding:0 2.2rem 0 1.8rem
+			padding:0 22px 0 18px
 			color: #fff
-			font-size: 1.8rem
+			font-size: 44px /*px*/
 		.title
 			display: inline-block
 			color: #fff
-			font-size: 1.8rem
+			font-size: 44px /*px*/
 			font-weight: 600
 		.title-right-icon
 			display: inline-block
 			float: right
-			margin-right: .5rem
+			margin-right: 5px
 		.icon-pancel,.icon-bell,.icon-omit
 			display: inline-block
-			padding: 0 .5rem
+			padding: 0 5px
 			color: #fff
-			font-size: 1.8rem
+			font-size: 44px
 </style>

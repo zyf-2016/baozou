@@ -12,15 +12,20 @@
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
 	.wrap
+		position: relative
+		z-index: 9
 		display: flex
-		height: 3.9rem
-		line-height: 3.9rem
-		font-size: 1.5rem
-		box-shadow: 0 .2rem .4rem #c7c7c7 
+		height: 88px
+		line-height: 88px
+		box-sizing: border-box
+		font-size: 32px /*px*/
+		box-shadow: 0 2px 4px #c7c7c7 
+		background-color: #fff
+		outline:#eee solid 8px
 		.item
 			flex: 1
 			text-align: center
 			color: #fb3d4f
 			&.router-link-active
-				border-bottom: 1px solid #fb3d4f
+				border-bottom: 6px solid #fb3d4f
 </style>

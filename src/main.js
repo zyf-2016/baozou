@@ -3,6 +3,7 @@ import App from './App'
 import 'common/stylus/index.styl'
 import router from './router'
 import VueLazyLoad from 'vue-lazyload'
+import 'lib-flexible'
 // import VueResource from 'vue-resource'
 import axios from 'axios'
 Vue.config.productionTip = false
